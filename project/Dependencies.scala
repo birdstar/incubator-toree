@@ -39,6 +39,7 @@ object Dependencies {
 
   // use the same jackson version in test than the one provided at runtime by Spark 2.0.0
   val jacksonDatabind = "com.fasterxml.jackson.core" % "jackson-databind" % "2.6.5" // Apache v2
+//  val jacksonDatabind = "com.fasterxml.jackson.core" % "jackson-databind" % "2.8.8" // Apache v2
 
   val jeroMq = "org.zeromq" % "jeromq" % "0.3.6" // MPL v2
 
@@ -46,7 +47,8 @@ object Dependencies {
 
   val mockito = "org.mockito" % "mockito-all" % "1.10.19" // MIT
 
-  val playJson = "com.typesafe.play" %% "play-json" % "2.3.10" // Apache v2
+  //val playJson = "com.typesafe.play" %% "play-json" % "2.3.10" // Apache v2
+  val playJson = "com.typesafe.play" %% "play-json" % "2.5.9" // Apache v2
 
   val scalaCompiler = Def.setting{ "org.scala-lang" % "scala-compiler" % scalaVersion.value } // BSD 3-clause
   val scalaLibrary = Def.setting{ "org.scala-lang" % "scala-library" % scalaVersion.value } // BSD 3-clause
